@@ -3,15 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CI/CD Pipeline Demo</title>
+    <title>Flask CI/CD Pipeline</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Segoe UI, sans-serif;
+        }
+
+        body{
+            background:linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+            min-height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color:white;
+        }
+
+        .container{
+            width:90%;
+            max-width:1000px;
+            background:rgba(255,255,255,.08);
+            backdrop-filter:blur(15px);
+            border-radius:20px;
+            padding:40px;
+            box-shadow:0 10px 40px rgba(0,0,0,.3);
+            text-align:center;
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:15px;
+        }
+
+        h2{
+            font-weight:400;
+            color:#dbeafe;
+            margin-bottom:30px;
+        }
+
+        .badges{
+            display:flex;
+            justify-content:center;
+            flex-wrap:wrap;
+            gap:15px;
+            margin-bottom:35px;
+        }
+
+        .badge{
+            background:#16a34a;
+            padding:12px 18px;
+            border-radius:30px;
+            font-weight:bold;
+        }
+
+        .cards{
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+            margin-top:30px;
+        }
+
+        .card{
+            background:white;
+            color:#111827;
+            border-radius:15px;
+            padding:25px;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-8px);
+        }
+
+        .card h3{
+            margin-bottom:10px;
+        }
+
+        .buttons{
+            margin-top:40px;
+        }
+
+        .btn{
+            display:inline-block;
+            margin:10px;
+            padding:15px 28px;
+            text-decoration:none;
+            color:white;
+            border-radius:10px;
+            background:#2563eb;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#1d4ed8;
+        }
+
+        footer{
+            margin-top:40px;
+            color:#cbd5e1;
+        }
+    </style>
 </head>
+
 <body>
-    <h1>🚀 CI/CD Pipeline Demo</h1>
 
-    <h2>Welcome Sourabh!</h2>
+<div class="container">
 
-    <p>Your Flask application is running successfully.</p>
+<h1>🚀 Flask CI/CD Pipeline</h1>
 
-    <p>Next Step → GitHub Actions CI/CD</p>
+<h2>GitHub Actions • Docker • Flask • Python</h2>
+
+<div class="badges">
+
+<div class="badge">✅ CI Ready</div>
+<div class="badge">🐳 Docker</div>
+<div class="badge">🧪 Pytest</div>
+<div class="badge">✔ Black</div>
+<div class="badge">✔ Flake8</div>
+
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>⚡ Continuous Integration</h3>
+<p>Every push automatically runs formatting, linting and testing using GitHub Actions.</p>
+</div>
+
+<div class="card">
+<h3>🐳 Docker</h3>
+<p>The application is fully containerized for consistent development and deployment.</p>
+</div>
+
+<div class="card">
+<h3>🧪 Automated Testing</h3>
+<p>Unit tests are executed automatically using Pytest before every deployment.</p>
+</div>
+
+<div class="card">
+<h3>🚀 Flask</h3>
+<p>A lightweight Flask application demonstrating modern DevOps practices.</p>
+</div>
+
+</div>
+
+<div class="buttons">
+
+<a class="btn" href="/health">Health Check API</a>
+
+<a class="btn"
+href="https://github.com/sourabhg07/flask-cicd-pipeline"
+target="_blank">
+GitHub Repository
+</a>
+
+</div>
+
+<footer>
+
+<h3>Project Workflow</h3>
+
+<p>
+
+Developer ➜ GitHub ➜ GitHub Actions ➜ Testing ➜ Docker ➜ Flask App
+
+</p>
+
+</footer>
+
+</div>
+
 </body>
 </html>
